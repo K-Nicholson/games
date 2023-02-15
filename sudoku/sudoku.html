@@ -1,21 +1,32 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content="width=device-width initial-scale=1.0 user-scalable+no">
-        
-        <title>Sudoku</title>
-        <link rel = "stylesheet" href="sudoku.css">
-        <script src = "sudoku.js"></script>
-    </head>
 
-    <body>
-        <h1>Sudoku</h1>
-        <hr>
-        <h2 id="errors">0</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable+no">
 
-        <!-- 9x9 board -->
-        <div id="board"></div>
-        <br>
-        <div id="digits"></div>
-    </body>
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="sudoku.js"></script>
+</head>
+
+<body>
+    <h1>Sudoku</h1>
+    <hr>
+    <div class="navBar">
+        <h2 id="errors">Mistakes: 0/3</h2>
+        <img id="restart" class="btn" src="./assets/restart.svg" alt="restart icon" aria-hidden="true">
+    </div>
+
+    <!-- 9x9 board -->
+    <div id="board"></div>
+    <br>
+    <div id="digits"></div>
+
+    <!-- GAME OVER -->
+    <div id="gameOver" style="display: none">
+        <div>GAME OVER</div>
+
+    </div>
+</body>
+
 </html>

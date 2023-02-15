@@ -7,8 +7,33 @@ hr{
     width: 500px;
 }
 
+#restart{
+    width: 20px;
+    height: 20px;
+}
+
+.navBar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px; 
+}
+
+.navBar>*{
+    margin: 2px;
+    margin-right: 8px;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(222, 222, 255) ;
+    padding: 3px;
+}
+
 #errors{
-    color: red;
+    color: rgb(254, 109, 109);
 }
 
 #board{
