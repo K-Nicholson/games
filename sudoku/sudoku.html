@@ -2,19 +2,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable+no">
 
     <title>Sudoku</title>
     <link rel="stylesheet" href="sudoku.css">
-    <script src="sudoku.js"></script>
 </head>
 
 <body>
     <h1>Sudoku</h1>
     <hr>
     <div class="navBar">
-        <h2 id="errors">Mistakes: 0/3</h2>
-        <img id="restart" class="btn" src="./assets/restart.svg" alt="restart icon" aria-hidden="true">
+
+        <div class="container">
+            <h2 id="errors">Mistakes: 0/3</h2>
+
+
+            <div id="time">
+                <span class="digit" id="hr">
+                    00</span>
+                <span class="txt">:</span>
+                <span class="digit" id="min">
+                    00</span>
+                <span class="txt">:</span>
+                <span class="digit" id="sec">
+                    00</span>
+                <span class="txt">:</span>
+                <span class="digit" id="count">
+                    00</span>
+            </div>
+            <div>
+                <img id="pause" class="btn navButtons" src="./assets/pause.svg" alt="pause icon">
+                <img id="restart" class="btn navButtons" src="./assets/restart.svg" alt="restart icon" aria-hidden="true">
+            </div>
+            <!-- <img id="restart" class="btn" src="./assets/restart.svg" alt="restart icon" aria-hidden="true"> -->
+
+        </div>
+
+    </div>
+
     </div>
 
     <!-- 9x9 board -->
@@ -27,6 +53,8 @@
         <div>GAME OVER</div>
 
     </div>
+    <script src="sudoku.js"></script>
+
 </body>
 
 </html>
